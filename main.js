@@ -65,6 +65,17 @@ input.onpaste=function(){
 //start game
 startButton.onclick=function(){
     this.remove();
+    input.focus();
+    //Generate word function
+    GenerateWords();
 }
+
+function GenerateWords(){
+    //Get random word from array
+    let randomWord=words[Math.floor(Math.random()*words.length)];
+    let indexOfRandomWord=words.indexOf(randomWord);
+    words.splice(randomWord,1);
+}
+
 
 
