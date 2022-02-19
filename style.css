@@ -105,12 +105,13 @@ border-radius: 6px;
 }
 .finish{
   font-weight:bold;
-  font-size: 40px;
+  font-size: 60px;
   text-align: center;
-  padding:15px;
+  padding:20px;
+  margin:5px auto;
 }
 .finish .good{
-  color:var(--main-color);
+  color:rgb(3, 192, 3);
 }
 .finish .bad{
   color:red;
