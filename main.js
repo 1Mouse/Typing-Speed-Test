@@ -63,7 +63,7 @@ const lvls = {
     Hard: 2,
 };
 //Default level
-let defaultLevelName = "Normal";
+let defaultLevelName = "Easy";
 let defaultLevelSecond = lvls[defaultLevelName];
 
 //catch selectors
