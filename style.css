@@ -116,3 +116,15 @@ border-radius: 6px;
 .finish .bad{
   color:red;
 }
+.restart{
+    width:50%;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    background-color:green;
+    color:white;
+    margin:auto;
+    padding: 20px;
+    cursor: pointer;
+    display: none;
+}

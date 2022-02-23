@@ -77,6 +77,7 @@ let timeLeftSpan = document.querySelector(".time span");
 let scoreGot = document.querySelector(".score .got");
 let scoreTotal = document.querySelector(".score .total");
 let finishMessage = document.querySelector(".finish");
+let playAgain=document.querySelector(".restart");
 
 //setting level name, seconds, score
 lvlNameSpan.innerHTML = defaultLevelName;
@@ -138,6 +139,7 @@ function startGame() {
                     upcomingWords.remove();
                     theWord.remove();
                     input.remove();
+                    replay();
                 }
             } else {
                 let span = document.createElement("span");
@@ -146,10 +148,17 @@ function startGame() {
                 span.appendChild(spanText);
                 finishMessage.appendChild(span);
 
-                upcomingWords.remove();
+               upcomingWords.remove();
                 theWord.remove();
                 input.remove();
+                replay();
             }
         }
     }, 1000);
+}
+function replay() {
+    playAgain.style.display="block";
+    playAgain.onclick=function (){
+        location.reload();
+    };
 }
